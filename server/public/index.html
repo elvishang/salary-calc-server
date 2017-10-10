@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="vendors/jquery.js"></script>
+    <script src="scripts/client.js"></script>
+    <title>Salary Calculator</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>Salary Calculator</h1>
+      <form>
+        <h3>Employee</h3>
+        <div class="form-row">
+          <div class="form-group form-group col-md-6">
+            <label for="firstName">First Name</label>
+            <input class="form-control" name="firstName" placeholder="First Name">
+          </div>
+          <div class="form-group form-group col-md-6">
+            <label for="lastName">Last Name</label>
+            <input class="form-control" name="lastName" placeholder="Last Name">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="idNumber">ID Number</label>
+            <input class="form-control" name="idNumber" placeholder="ID #">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="jobTitle">Job Title</label>
+            <input class="form-control" name="jobTitle" placeholder="Job Title">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="annualSalary">Annual Salary</label>
+            <input class="form-control" name="annualSalary" placeholder="Annual Salary">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary submit float-right">Submit</button>
+      </form>
+    <table class="table table-sm table-striped">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>ID Number</th>
+          <th>Job Title</th>
+          <th>Annual Salary</th>
+          <th>Monthly Salary</th>
+          <th></th>
+        </tr>
+        <tbody id="tableBody">
+          <tr><td colspan="4">Total:</td><td>$0</td><td>$0</td><td></td></tr>
+        </tbody>
+      </thead>
+
+      </table>
+    </div>
+  </body>
+</html>
